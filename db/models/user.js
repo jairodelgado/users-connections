@@ -18,7 +18,8 @@ module.exports = function(Sequelize, DataTypes) {
           msg: "the name must have at least 5 characters long and no more than 20"
         }
       }
-    }, {
+    }
+  }, {
     classMethods: {
     },
     freezeTableName: true,
