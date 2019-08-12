@@ -45,7 +45,23 @@ module.exports = (models) => {
     })
 
     .put((req, res) => {
-    
+      models.User.find({
+        where: {
+          id: req.params.user_id
+        }
+      })
+      .then((user) => {
+        return user || promise.reject( new Error('Unknown user id provided') );
+      })
+      .then((user) => {
+        return user.updateAttributes(req.body);
+      })
+      .then(() => {
+          res.json({message: 'User succesfully updated!'});
+        })
+      .catch((exception) => {
+        res.status(400).json({message: exception.message});
+      });
     })
 
     .delete((req, res) => {
