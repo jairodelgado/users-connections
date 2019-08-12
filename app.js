@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-app.models = require('./db/models');
+app.models = require('./models');
 app.use(favicon(path.join(__dirname, 'client', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());

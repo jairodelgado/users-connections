@@ -11,18 +11,23 @@ module.exports = function(Sequelize, DataTypes) {
       allowNull: false,
       validate: {
         isAlpha: {
-          msg: "you must provide a name with only letters"
+          msg: "You must provide a name with only letters"
         },
         len: {
-          args: [5, 20],
-          msg: "the name must have at least 5 characters long and no more than 20"
+          args: [1, 20],
+          msg: "The name must have at least 1 characters long and no more than 20"
         }
       }
     }
   }, {
     classMethods: {
-    },
-    freezeTableName: true,
+      associate: function(models) {
+        models.User.belongsToMany(models.User, {
+          as: 'Connections',
+          through: 'Connection'
+        });
+      }
+    }
     timestamps: false
   });
   return User;
