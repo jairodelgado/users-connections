@@ -25,12 +25,12 @@ class UserDetails extends Component {
 
   render(){
     return (
-      <Editor id={this.props.params.id} of="/users" display="Edit user details" onItemChange={this.updateItem}>
+      <Editor of="/users" id={this.props.params.id} display="Edit user details" onItemChange={this.updateItem}>
         <div className="section">
           <div className="input-field">
             <i className="material-icons prefix">perm_identity</i>
-            <input ref="name" name="name" type="text" className="validate" value={this.state.item.name || ""} required data-length="20" pattern="[a-zA-Z]{5,20}"/>{' '}
-            <label className="active" data-error="You must provide only letters bettween 5 and 20 characters long.">Name</label>{' '}
+            <input ref="name" name="name" type="text" className="validate" value={this.state.item.name || ""} required data-length="20" pattern="[a-zA-Z]{1,20}"/>{' '}
+            <label className="active" data-error="You must provide only letters bettween 1 and 20 characters long.">Name</label>{' '}
           </div>
         </div>
       </Editor>
