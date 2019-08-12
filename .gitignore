@@ -31,3 +31,6 @@ npm-debug.log
 
 # Database login information
 config/database.json
+
+# Public folder
+ public
