@@ -5,7 +5,8 @@ module.exports = function(Sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
-    },
+    }
+  }, {
     classMethods: {
       associate: function(models) {
         models.Connection.belongsTo(models.User);
