@@ -46,7 +46,7 @@ class Archive extends Component {
     return (
       <div className="row">
         <Link to={this.props.of + '/create'} className="secondary-content">
-          Create new user
+          Create new
         </Link>
         <h5>{this.props.children}</h5>
         <div className="divider"></div>
