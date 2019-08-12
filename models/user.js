@@ -27,7 +27,7 @@ module.exports = function(Sequelize, DataTypes) {
           through: 'Connection'
         });
       }
-    }
+    },
     timestamps: false
   });
   return User;
