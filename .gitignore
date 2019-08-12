@@ -33,4 +33,4 @@ npm-debug.log
 config/database.json
 
 # Public folder
- public
+ public/*
