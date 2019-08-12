@@ -36,7 +36,7 @@ class App extends Component {
           </li>
           <li><a className="subheader">Actions</a></li>
           <li><div className="divider"></div></li>
-          <li><a className="waves-effect" href="#!"><i className="material-icons left">dashboard</i>Users</a></li>
+          <li><a className="waves-effect" href="/users"><i className="material-icons left">dashboard</i>Users</a></li>
           <li><a className="waves-effect" href="#!"><i className="material-icons left">perm_identity</i>Connections</a></li>
           
         </ul>
