@@ -34,7 +34,3 @@ config/database.json
 
 # Public folder
  public
- 
-# Binaries
-
-bin
