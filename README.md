@@ -2,7 +2,7 @@
 
 This is a toy project developed in Sequelize, Express, React and NodeJS.  The
 application allows to create users and connections between them. Users are
-defined by ony an id and a name. In addition, connections can be visualized
+defined by an id and a name. In addition, connections can be visualized
 in a directed graph.
 
 ## Requirements
