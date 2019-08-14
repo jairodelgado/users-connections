@@ -25,12 +25,12 @@ module.exports = (models) => {
         });
     });
 
-  router.route('/details/:user_id')
+  router.route('/details/:userId')
     
     .get((req, res) => {
       models.User.find({
         where: {
-          id: req.params.user_id
+          id: req.params.userId
         }
       })
       .then((user) => {
@@ -47,7 +47,7 @@ module.exports = (models) => {
     .put((req, res) => {
       models.User.find({
         where: {
-          id: req.params.user_id
+          id: req.params.userId
         }
       })
       .then((user) => {
@@ -67,7 +67,7 @@ module.exports = (models) => {
     .delete((req, res) => {
       models.User.find({
         where: {
-          id: req.params.user_id
+          id: req.params.userId
         }
       })
       .then((user) => {
