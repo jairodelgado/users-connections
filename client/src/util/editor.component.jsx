@@ -93,7 +93,7 @@ class Editor extends Component {
       <div className="row">
         <h5>{this.props.display}</h5>
         <div className="divider"></div>
-        <form ref="form" className="col s10 offset-s1" role="form" onSubmit={this.handleSubmit} onChange={this.updateState}>
+        <form ref="form" role="form" onSubmit={this.handleSubmit} onChange={this.updateState}>
           {this.props.children}
 
           <div className="section right">
