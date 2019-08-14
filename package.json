@@ -9,11 +9,13 @@
   "dependencies": {
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
+    "d3": "^5.9.7",
     "debug": "~2.6.0",
     "express": "~4.14.1",
     "morgan": "~1.7.0",
     "mysql": "^2.13.0",
     "react": "^15.4.2",
+    "react-d3-graph": "^2.1.0",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.2",
     "sequelize": "^3.30.2",
