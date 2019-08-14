@@ -5,7 +5,7 @@ import Archive from '../util/archive.component.jsx';
 
 class User extends Component {
   render(){
-    return <Archive of="/users" display="name">Users</Archive>;
+    return <Archive of="/users" display="name" create edit connections delete>Users</Archive>;
   }
 }
 
