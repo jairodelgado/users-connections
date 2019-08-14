@@ -24,7 +24,7 @@ module.exports = function(Sequelize, DataTypes) {
       associate: function(models) {
         models.User.belongsToMany(models.User, {
           as: 'Connections',
-          through: 'Connection'
+          through: 'Connections'
         });
       }
     },
